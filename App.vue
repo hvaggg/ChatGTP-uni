@@ -13,15 +13,8 @@
 	platform = 4
 	// #endif
 	export default {
-
 		onLaunch: function() {
-
 			let version = "1.0.3"
-			console.log(
-				`\n %c 云AI助手V${version} %c 公众号：南羽工作室 \n\n`,
-				"color: #ffffff; background: #3c9cff; padding:5px 0;",
-				"color: #3c9cff;background: #ffffff; padding:5px 0;"
-			);
 			let oldVersion = uni.getStorageSync('version') || ''
 			if (version != oldVersion) {
 				uni.removeStorageSync('chat')
